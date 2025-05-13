@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="won">
+            
+            <p>Congratulations, <br> You won! <br><br> team: <span id="teamName"></span> </p>
+        <div class="reset-btn-div">
+         <button class="reset-btn" onclick="reset()">RESET</button>
+         </div>
+        </div>
+        <h1>Volleyball</h1>
+        
+        <div class="container">
+            <div>
+                <h3 id="teamNameOne">Team one: </h3>
+                
+                    <input id="inputTeamOne" type= "text"></input>
+                    <button id="saveTeamOne" onclick="saveTeamOne()">save</button>
+                <p id="set-thuis">sets: </p>
+            <div class="count-el">
+                <span id="count-thuis">0</span>
+                  
+            </div>
+             <button class="plus-thuis-btn" onclick="plusThuis()">+1</button>
+            </div>
+            <div>
+                <h3 id="teamNameTwo">Team two: </h3>
+                
+                    <input id="inputTeamTwo" type= "text"></input>
+                    <button id="saveTeamTwo" onclick="saveTeamTwo()">save</button>
+                <p id="set-uit">sets: </p>
+                  <div class="count-el">
+                <span id="count-uit">0</span>
+                
+            </div>
+               <button class="plus-uit-btn" onclick="plusUit()">+1</button>
+            </div>
+        </div>
+       <div class="reset-btn-div">
+         <button class="reset-btn" onclick="reset()">RESET</button>
+         </div>
+         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
